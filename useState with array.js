@@ -1,10 +1,11 @@
-In React, the useState hook can be used to manage state variables, including arrays. Here's an explanation of how to use useState with arrays, including how to merge and update objects within the array, along with code samples:
+****************************************************************8
+In React, the useState hook can be used to manage state variables, including arrays.
+  Heres an explanation of how to use useState with arrays, including how to merge and update objects within the array, along with code samples:
 
 Initializing an Array State:
 You can initialize an array state using the useState hook, passing an initial value as an empty array [].
 Example:
-jsx
-Copy code
+
 import React, { useState } from 'react';
 
 const MyComponent = () => {
