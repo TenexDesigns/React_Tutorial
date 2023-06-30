@@ -9,7 +9,8 @@ compnent1                            component2                      componet3 (
 
 
 
-Using useReducer in combination with useContext provides a good way to manage global state across different components in your React application. The useReducer hook is used to manage state and useContext is used to pass that state across components.
+Using useReducer in combination with useContext provides a good way to manage global state across different components in your React application.
+  The useReducer hook is used to manage state and useContext is used to pass that state across components.
 
 Here's an example of how you can use useReducer and useContext to manage and share a counter state across different components:
 
