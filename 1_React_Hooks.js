@@ -1,4 +1,4 @@
-React Hooks are functions provided by React that allow developers to add state and other React features to functional components.
+ React Hooks are functions provided by React that allow developers to add state and other React features to functional components.
   They were introduced in React 16.8 as a way to write reusable logic in functional components without the need for class components.
 
 React Hooks solve several problems and provide benefits:
