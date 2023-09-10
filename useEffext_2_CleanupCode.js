@@ -3,7 +3,8 @@
 
 4. Clean Up code of use effect
 
-The clean upcode is excuted when you unmount a componnent from the dom."Unmounting" basically means that the component is being removed from the DOM. This happens when the components parent no longer renders it, or when you explicitly unmount it using ReactDOM.unmountComponentAtNode().
+The clean upcode is excuted when you unmount a componnent from the dom."Unmounting" basically means that the component is being removed from the DOM.
+  This happens when the components parent no longer renders it, or when you explicitly unmount it using ReactDOM.unmountComponentAtNode().
 The clean up code can be used to  1. Cancel subscriptions
                                   2. Cancel Timers
                                   3.Remove Event Handlers
@@ -38,7 +39,8 @@ What does " component is unmounted " Mean
 
   
 
-"Unmounting" in the context of React basically means that the component is being removed from the DOM. This happens when the components parent no longer renders it, or when you explicitly unmount it using ReactDOM.unmountComponentAtNode().
+"Unmounting" in the context of React basically means that the component is being removed from the DOM.
+  This happens when the components parent no longer renders it, or when you explicitly unmount it using ReactDOM.unmountComponentAtNode().
 
 A component unmounts in various scenarios:
 
