@@ -1,4 +1,5 @@
-The useContext  Hook is used to pass props or data from th parant component  to the child component. The child component should be on the same treee as the parant component
+The useContext  Hook is used to pass props or data from th parant component  to the child component. 
+  The child component should be on the same treee as the parant component
 Here we can use useContext to pass the user name from the componet3 to component9, since they are on the same tree, we can can not use ,useContext on difffreent tress.
 
 
@@ -89,9 +90,10 @@ However, to make your context usage even more efficient and safe, you can create
 
 
 
-Sure, creating a custom hook that encapsulates the context consumption can help you ensure that the context is used correctly within a provider. It can also provide a more efficient and safer way to use context.
+Sure, creating a custom hook that encapsulates the context consumption can help you ensure that the context 
+  is used correctly within a provider. It can also provide a more efficient and safer way to use context.
 
-Let's use the UserContext from your previous example and create a custom hook named useUser.
+Lets use the UserContext from your previous example and create a custom hook named useUser.
 
 import React, { useContext } from 'react';
 
@@ -104,7 +106,8 @@ export function useUser() {
   }
   return context;
 }
-In the useUser hook, we use useContext to consume the UserContext. If the UserContext is not found, which means the useUser hook is not being used within a UserProvider, we throw an error.
+In the useUser hook, we use useContext to consume the UserContext.
+  If the UserContext is not found, which means the useUser hook is not being used within a UserProvider, we throw an error.
 
 Next, we create a UserProvider component that provides the UserContext.
 
@@ -163,7 +166,8 @@ devtrium.com, kentcdodds.com
 
 
 
-FOLOW UP QUESTION ----> In the above context, When using context, should the reciving component be on the same treee as the provider component
+FOLOW UP QUESTION ----> In the above context, When using context, should the reciving component be on the same treee as
+  the provider component
 ********************************************************************************8
 
 
