@@ -1,6 +1,8 @@
-Yes, its possible and often beneficial to use multiple useEffect hooks in a single component. This approach aligns with the principle of separation of concerns, meaning each useEffect hook is responsible for managing a specific piece of logic or functionality.
+Yes, its possible and often beneficial to use multiple useEffect hooks in a single component. 
+  This approach aligns with the principle of separation of concerns, meaning each useEffect hook is responsible for managing a specific piece of logic or functionality.
 
-For instance, consider a component that fetches user data from an API and also listens for window resize events. These are two distinct concerns, and it makes sense to handle them in separate useEffect hooks:
+For instance, consider a component that fetches user data from an API and also listens for window resize events. 
+  These are two distinct concerns, and it makes sense to handle them in separate useEffect hooks:
 
 const [user, setUser] = useState(null);
 const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -78,7 +80,8 @@ Remember, if a component renders multiple times (as they typically do), the prev
 
 
 
-FOLLOW UP QUESTION --->in the above context, what are this activiteas that require clan up code and what activiteis do not require clean up code, explain with code samples
+FOLLOW UP QUESTION --->in the above context, what are this activiteas that require clan up code and what activiteis do not require clean up code,
+  explain with code samples
 ***********************************************************************************************************
 
 Sure, lets examine the types of activities that require cleanup code and those that do not.
@@ -87,7 +90,8 @@ Activities that Require Cleanup
 --------------------------------------------------------------------------------------------
 
 1.Subscriptions and Event Listeners:
-  If you set up a subscription or an event listener within a useEffect, youll need to clean it up to avoid memory leaks and unintended behavior. This is typically done by returning a cleanup function.
+  If you set up a subscription or an event listener within a useEffect, youll need to clean it up to avoid memory leaks and unintended behavior. 
+    This is typically done by returning a cleanup function.
 useEffect(() => {
   const handleResize = () => {
     setWindowSize(window.innerWidth);
@@ -134,7 +138,8 @@ useEffect(() => {
 In this example, the useEffect simply updates the state. Theres no need for a cleanup function because there's nothing to clean up.
 
 2.Network Requests: 
-Network requests dont usually require cleanup. However, you might want to handle the case where the component unmounts before the request completes to avoid trying to update state on an unmounted component.
+Network requests dont usually require cleanup. However, you might want to handle the case where the component unmounts
+  before the request completes to avoid trying to update state on an unmounted component.
 useEffect(() => {
   fetch('/api/data')
     .then(response => response.json())
