@@ -1,4 +1,5 @@
-To handle multiple state values separately using multiple reducers, you can modify the existing code by creating separate reducers and state variables. Here's an example:
+To handle multiple state values separately using multiple reducers, you can modify the existing code by creating 
+  separate reducers and state variables. Heres an example:
 
 jsx
 Copy code
