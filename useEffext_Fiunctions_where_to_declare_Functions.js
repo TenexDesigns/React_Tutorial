@@ -1,4 +1,4 @@
-In React, you can declare functions that you're going to use in the useEffect hook in two places:
+In React, you can declare functions that youre going to use in the useEffect hook in two places:
 
 Inside the useEffect Hook: You can declare the function directly inside the useEffect hook. This is useful if the function is only relevant to the effect and nowhere else in the component.
 useEffect(() => {
