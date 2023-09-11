@@ -1,4 +1,5 @@
-In this corrected code, the onClick event is used instead of onChange for the button. When the button is clicked, the handleClick function is called, which updates idFromButtonClick to the current value of id. This triggers the useEffect because idFromButtonClick is in its dependency array, and the new post is fetched. freecodecamp.org, codingdeft.com
+In this corrected code, the onClick event is used instead of onChange for the button. 
+    When the button is clicked, the handleClick function is called, which updates idFromButtonClick to the current value of id. This triggers the useEffect because idFromButtonClick is in its dependency array, and the new post is fetched. freecodecamp.org, codingdeft.com
 
 
 import axios from 'axios'
@@ -79,7 +80,11 @@ function DataFetching() {
 }
 
 export default DataFetching;
-In this version, a separate fetchData function is defined using the async/await syntax. It performs the API call and updates the post state with the fetched data. The function is called both inside the useEffect hook (to fetch the data initially) and when the "Fetch post" button is clicked.
+
+
+In this version, a separate fetchData function is defined using the async/await syntax.
+    It performs the API call and updates the post state with the fetched data.
+    The function is called both inside the useEffect hook (to fetch the data initially) and when the "Fetch post" button is clicked.
 
 Using a callback function in setState:
 jsx
